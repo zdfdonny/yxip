@@ -1,0 +1,55 @@
+# name: Update IP List
+
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'   # 每 24 小时运行一次（每天 00:00 UTC = 08:00 北京时间）
+#   workflow_dispatch:      # 允许手动触发
+#   push:                   # 允许提交触发（但产物更新不再触发自身）
+#     paths-ignore:
+#       - 'ip.txt'
+#       - 'best.json'
+#       - 'enrich_cache.json'
+
+# # 定时与手动可能重叠，串行执行避免并发写同一批文件
+# concurrency:
+#   group: update-ip-list
+#   cancel-in-progress: false
+
+# jobs:
+#   update-ip-list:
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 20
+
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0 # 需要完整历史，rebase 才不会出错
+
+#       - name: Set up Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.12'
+
+#       - name: Install dependencies
+#         run: |
+#           python -m pip install --upgrade pip
+#           pip install -r requirements.txt
+
+#       - name: Self test
+#         run: python collect_ips.py --self-test
+
+#       - name: Run pipeline
+#         run: python collect_ips.py --top 30
+
+#       - name: Commit and push changes
+#         run: |
+#           git config --global user.email "zdfdonny@163.com"
+#           git config --global user.name "zdfdonny"
+#           git add ip.txt best.json enrich_cache.json
+#           if git diff --cached --quiet; then
+#             echo "No changes detected, skipping commit."
+#             exit 0
+#           fi
+#           git commit -m "Automatic update: refresh top-30 preferred IPs"
+#           git pull --rebase origin main || true
+#           git push origin main
