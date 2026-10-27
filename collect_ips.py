@@ -134,6 +134,12 @@ CF_CIDR_FALLBACK = [
 
 OUTPUT_TXT = "ip.txt"
 OUTPUT_JSON = "best.json"
+# 多机场景：每台机器产出自己的榜单文件，互不覆盖（RTT 只对测量点有效，见 README）。
+#   --name home       -> ip-home.txt / ip-home.json
+#   --name "{host}"   -> ip-<主机名>.txt，不同电脑自动区分，无需记标签
+#   --also ip.txt     -> 同一次运行额外再写一份 ip.txt（客户端已指向它时很有用）
+# 模板占位符：{host} 主机名、{date} 当天日期 YYYYMMDD。
+OUTPUT_ALIASES = ()          # 每次运行都要额外写的名字，例如 ("ip.txt",)
 ENRICH_CACHE = "enrich_cache.json"
 
 IP_PORT_RE = re.compile(r"(?<![\d.])(\d{1,3}(?:\.\d{1,3}){3})(?::(\d{1,5}))?(?![\d.])")
@@ -834,13 +840,68 @@ def display_region(e: Entry) -> str:
     return e.region or "??"
 
 
-def write_outputs(top: list, txt_path: str = OUTPUT_TXT, json_path: str = OUTPUT_JSON) -> None:
+def _slugify(text: str) -> str:
+    """把 --name 清洗成安全的文件名片段：去掉路径分隔符与 .. ，只留字母数字 . _ - 与中文。"""
+    cleaned = re.sub(r"[^\w.\-\u4e00-\u9fff]", "-", text, flags=re.UNICODE)
+    return re.sub(r"-{2,}", "-", cleaned).strip(".-")[:64]
+
+
+def expand_name(template: str, host: str, today: str) -> str:
+    """展开 --name / --also 模板里的 {host} / {date} 占位符。"""
+    if not template:
+        return ""
+    return _slugify(template.replace("{host}", host).replace("{date}", today))
+
+
+def output_paths(name: str = "", out: str = "", also: Iterable[str] = (),
+                 host: Optional[str] = None, today: Optional[str] = None) -> tuple:
+    """解析本次落盘的文件名，返回 (txt_path, json_path, alias_txt_paths)。
+
+    优先级：`--out`（显式路径，JSON 同名）> `--name`（`ip-<name>.txt`）> 默认 `ip.txt`。
+    不给 `--name` 时行为与旧版完全一致（`ip.txt` + `best.json`）。
+    `also` 只额外写 txt 副本——客户端消费的就是 txt，不必再多几份 JSON。
+    """
+    host = host if host is not None else socket.gethostname()
+    today = today or datetime.now().strftime("%Y%m%d")
+
+    if out:
+        txt = out
+        json_path: Optional[str] = txt[:-4] + ".json" if txt.endswith(".txt") else txt + ".json"
+    else:
+        base = expand_name(name, host, today)
+        if base and base != "ip":
+            txt, json_path = f"ip-{base}.txt", f"ip-{base}.json"
+        else:
+            txt, json_path = OUTPUT_TXT, OUTPUT_JSON
+
+    seen = {txt}
+    aliases: list = []
+    for item in also:
+        for part in str(item).split(","):
+            candidate = expand_name(part.strip(), host, today)
+            if not candidate:
+                continue
+            if not candidate.endswith(".txt"):
+                candidate += ".txt"
+            if candidate in seen:
+                continue
+            seen.add(candidate)
+            aliases.append(candidate)
+    return txt, json_path, aliases
+
+
+def write_outputs(top: list, txt_path: str = OUTPUT_TXT,
+                  json_path: Optional[str] = OUTPUT_JSON) -> None:
+    """写产物。json_path 传 None 时只写 txt（用于额外副本）。"""
     now = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M:%S %z")
 
     with open(txt_path, "w", encoding="utf-8") as f:
         for rank, e in enumerate(top, 1):
             tag = e.isp or e.kind
             f.write(f"{e.endpoint}#{display_region(e)}-{rank}-{tag}\n")
+
+    if not json_path:
+        return
 
     payload = {
         "generated_at": now,
@@ -1111,6 +1172,30 @@ def self_test() -> int:
     check(output_regression(50, list(range(10)), 10) is None, "主动调小 --top 不应误判")
     check(not output_regression(50, [], 0), "--top 0 不应拦截")
 
+    # 多机输出命名
+    check(output_paths(host="h", today="20260101")[:2] == ("ip.txt", "best.json"), "默认输出名不变")
+    check(output_paths(name="home", host="h", today="d")[:2] == ("ip-home.txt", "ip-home.json"),
+          "--name 应产出 ip-<name>.txt")
+    check(output_paths(name="ip", host="h", today="d")[:2] == ("ip.txt", "best.json"),
+          "--name ip 等同默认")
+    check(output_paths(name="{host}", host="office-pc", today="d")[0] == "ip-office-pc.txt",
+          "{host} 占位符应展开为主机名")
+    check(output_paths(name="{date}", host="h", today="20260101")[0] == "ip-20260101.txt",
+          "{date} 占位符应展开为日期")
+    check("/" not in output_paths(name="../../etc/passwd", host="h", today="d")[0]
+          and "\\" not in output_paths(name="..\\..\\x", host="h", today="d")[0],
+          "路径穿越应被清洗")
+    check(output_paths(out="x.txt", host="h", today="d")[:2] == ("x.txt", "x.json"),
+          "--out 应推导同名 JSON")
+    check(output_paths(name="home", out="x.txt", host="h", today="d")[:2] == ("x.txt", "x.json"),
+          "--out 应优先于 --name")
+    alias_cases = output_paths(name="home", also=("ip.txt", "latest", "{host}"), host="h", today="d")[2]
+    check(alias_cases == ["ip.txt", "latest.txt", "h.txt"], f"别名展开异常: {alias_cases}")
+    check(output_paths(name="home", also=("ip-home.txt",), host="h", today="d")[2] == [],
+          "与主文件重复的别名应去掉")
+    check(output_paths(name="home", also=("ip.txt,latest",), host="h", today="d")[2]
+          == ["ip.txt", "latest.txt"], "逗号分隔的别名应展开")
+
     if fails:
         print("❌ 自检失败:")
         for f in fails:
@@ -1135,8 +1220,19 @@ def main(argv: Iterable[str] = None) -> int:
     )
     ap.add_argument("--out", default=None, help=f"输出文件名，默认 {OUTPUT_TXT}")
     ap.add_argument(
+        "--name", default="",
+        help='榜单文件名标签：home 产出 ip-home.txt，支持 {host}/{date} 占位符'
+             '（如 --name "{host}" 让每台电脑自动输出自己的文件）',
+    )
+    ap.add_argument(
+        "--also", action="append", default=None, metavar="FILE",
+        help="额外再写一份 txt 副本，可多次或逗号分隔，如 --also ip.txt",
+    )
+    ap.add_argument(
         "--force", action="store_true",
-        help=f"忽略产物回落保护（本次条数不足上次的 {MIN_OUTPUT_RATIO:.0%} 时仍覆盖）",
+        # argparse 会对 help 再做一次 % 格式化，所以字面百分号要写成 %%
+        help="忽略产物回落保护（本次条数不足上次的 "
+             f"{f'{MIN_OUTPUT_RATIO:.0%}'.replace('%', '%%')} 时仍覆盖）",
     )
     args = ap.parse_args(list(argv) if argv is not None else None)
 
@@ -1152,11 +1248,12 @@ def main(argv: Iterable[str] = None) -> int:
             return 2
         ALLOWED_KINDS = want
 
-    txt_path = args.out or OUTPUT_TXT
-    if args.out:
-        json_path = txt_path[:-4] + ".json" if txt_path.endswith(".txt") else txt_path + ".json"
-    else:
-        json_path = OUTPUT_JSON
+    if args.out and args.name:
+        print(f"⚠️ --out 优先于 --name，本次将写入 {args.out}")
+    txt_path, json_path, alias_paths = output_paths(
+        name=args.name, out=args.out or "",
+        also=tuple(OUTPUT_ALIASES) + tuple(args.also or ()),
+    )
 
     started = time.time()
     print("=" * 78)
@@ -1216,9 +1313,13 @@ def main(argv: Iterable[str] = None) -> int:
 
     enrich(top, keep_extra=prefetched)
     write_outputs(top, txt_path, json_path)
+    for alias in alias_paths:
+        write_outputs(top, alias, None)
     print_summary(top)
 
     print(f"\n✅ 已写入 {txt_path} 与 {json_path}")
+    if alias_paths:
+        print(f"   同内容副本: {', '.join(alias_paths)}")
     print(f"⏱  耗时 {time.time() - started:.1f}s")
     return 0
 

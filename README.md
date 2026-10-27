@@ -21,6 +21,7 @@
 - **可解释** — 每次运行打印按类型 / 地区 / 数据源的连通画像，源失效一眼可见
 - **零配置自检** — `--self-test` 全离线覆盖解析、分类、评分、筛选逻辑
 - **反查省** — 只为「评分靠前的候选 + 入选者」查询 ip-api（默认 ≤ 300 个 IP = 3 个 batch 请求），全部落本地缓存
+- **多机各一份榜单** — `--name home` / `--name "{host}"` 让每台电脑产出自己的 `ip-<name>.txt`，`--also ip.txt` 可同时保留一份标准名
 
 ---
 
@@ -35,6 +36,8 @@ python collect_ips.py --top 50         # 自定义产出条数
 python collect_ips.py --kinds cf       # 只要 Cloudflare anycast
 python collect_ips.py --kinds relay    # 只要中转节点
 python collect_ips.py --out x.txt      # 输出到指定文件（JSON 同名）
+python collect_ips.py --name home      # 输出 ip-home.txt / ip-home.json（多机场景）
+python collect_ips.py --name "{host}" --also ip.txt   # 按主机名命名，并同步一份 ip.txt
 python collect_ips.py --no-measure     # 只跑采集与分类（调试用）
 python collect_ips.py --force          # 忽略产物回落保护，强制覆盖
 ```
@@ -44,6 +47,30 @@ python collect_ips.py --force          # 忽略产物回落保护，强制覆盖
 ---
 
 ## 输出
+
+### 文件命名
+
+默认写出 `ip.txt` + `best.json`（与旧版完全一致）。多台电脑各跑各的时，用 `--name`
+给榜单起名，避免互相覆盖：
+
+| 参数 | 产出 |
+|---|---|
+| （不给） | `ip.txt` / `best.json` |
+| `--name home` | `ip-home.txt` / `ip-home.json` |
+| `--name "{host}"` | `ip-<主机名>.txt`（本机为 `ip-Donny-PC.txt`） |
+| `--name "{host}-{date}"` | `ip-Donny-PC-20261027.txt` |
+| `--out my.txt` | `my.txt` / `my.json`（优先级最高，会覆盖 `--name`） |
+
+- 占位符：`{host}` 主机名、`{date}` 当天日期 `YYYYMMDD`，可组合使用；
+- `--also ip.txt`（可多次或逗号分隔）让**同一次运行**额外再写一份 txt 副本——
+  客户端已经指向 `ip.txt` 时，既能保留多机各自的榜单，又不破坏原有引用；
+- 名字会被清洗：路径分隔符、`..` 等一律替换，不会写出目录之外；
+- `--also` 只写 txt 副本（客户端消费的就是 txt），不再多生成 JSON；
+- 产物回落保护按**主文件**判定：`ip-home.txt` 的基线只来自它自己，多机互不干扰。
+
+> 为什么要按机器分文件：「优选」本质是**从某个网络位置测得的延迟排序**，
+> 不同机器（家宽 / 公司 / 境外 VPS）跑出来的榜单本就该不一样，混在一个 `ip.txt` 里
+> 互相覆盖没有意义。每台机器产出自己的 `ip-<name>.txt`，客户端按使用场景挑一份。
 
 ### `ip.txt`
 
@@ -263,6 +290,7 @@ python collect_ips.py --kinds relay   # 纯中转榜
 | `LATENCY_TAU_MS` | 100.0 | 延迟衰减常数 |
 | `MIN_UPSTREAM_COVERAGE` | 0.10 | 上游测速值覆盖率低于此值时弃用该分量 |
 | `LOCAL_CITY_FEED` | `city.txt` | 可选本地地区表路径 |
+| `OUTPUT_ALIASES` | `()` | 每次运行都要额外写的 txt 副本，例如 `("ip.txt",)` |
 
 > 为什么需要多样性上限：不设限时，同一个 `/24` 或同一台机器的多个端口会刷满整张榜，
 > 看起来「又快又多」，实际只是一条线路。
@@ -358,7 +386,8 @@ python collect_ips.py --kinds relay   # 纯中转榜
 ```
 collect_ips.py            主流水线（采集 / 分类 / 测速 / 评分 / 筛选 / 输出）
 requirements.txt
-ip.txt                    产物：TOP N 清单
+ip.txt                    产物：TOP N 清单（默认名，可用 --name 改成 ip-<name>.txt）
+ip-<name>.txt             产物：多机场景下各机器自己的清单（--name home / {host}）
 best.json               产物：测量与评分明细
 enrich_cache.json         产物：ip-api 反查缓存
 city.txt                  （可选）自有节点地区表，不存在则静默跳过
