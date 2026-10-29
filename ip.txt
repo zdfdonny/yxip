@@ -1,50 +1,50 @@
 103.238.227.212:8443#HK-1-Xnnet LLC
-111.92.240.90:8443#HK-2-VAPELINE1
-116.206.178.91:443#HK-3-Xnnet LLC
-207.57.132.189:8443#HK-4-NTT America
-207.57.125.21:443#HK-5-NTT America
-149.104.27.213:443#HK-6-Cogent Communications
-38.147.171.13:443#HK-7-Lucidacloud Limited
-103.118.254.240:443#HK-8-Cloudie Limited
-207.57.126.121:443#HK-9-NTT America
-103.143.81.178:443#HK-10-Lucidacloud Limited
-13.215.95.201:443#SG-11-Amazon Technologies Inc.
-123.111.169.70:2096#KR-12-SK Broadband Co Ltd
-123.111.169.70:2083#KR-13-SK Broadband Co Ltd
-13.250.129.244:443#SG-14-Amazon.com, Inc.
-13.250.17.35:443#SG-15-Amazon.com, Inc.
-103.27.187.43:443#JP-16-Starry Network Limited
-118.109.40.183:443#JP-17-BIGLOBE Inc.
-14.137.235.178:443#JP-18-Internet Initiative Japan Inc.
-103.238.129.171:443#JP-19-Interscale Inc
-103.201.130.126:443#JP-20-xTom Limited
-103.27.187.224:443#JP-21-Starry Network Limited
-140.235.37.72:443#JP-22-ByteVirt LLC
-103.85.25.249:443#JP-23-Starry Network Limited
-103.204.174.177:443#JP-24-SoftLayer Technologies Inc.
-14.137.235.130:443#JP-25-Internet Initiative Japan Inc.
-13.215.229.246:443#SG-26-Amazon Technologies Inc.
-114.32.43.140:2087#TW-27-Chunghwa Telecom Co., Ltd.
-13.251.248.21:443#SG-28-Amazon.com, Inc.
-114.34.210.159:443#TW-29-Chunghwa Telecom Co., Ltd.
-13.125.141.213:443#KR-30-Amazon Technologies Inc.
-104.234.174.220:443#SG-31-Dromatics Systems Pte Ltd
-104.234.174.213:443#SG-32-Dromatics Systems Pte Ltd
-103.195.191.240:443#SG-33-Dromatics Systems Pte Ltd
-109.176.19.176:443#SG-34-ByteVirt LLC
-130.94.29.155:443#KR-35-Light Node Limited
-149.28.159.222:443#SG-36-The Constant Company
-140.115.53.51:443#TW-37-T-NCU.EDU.TW
-158.247.240.138:443#KR-38-The Constant Company, LLC
-64.176.226.26:8443#KR-39-The Constant Company, LLC
-158.247.224.240:443#KR-40-The Constant Company, LLC
-158.247.222.168:443#KR-41-The Constant Company, LLC
-158.247.253.111:2087#KR-42-The Constant Company, LLC
-202.148.221.133:443#TW-43-Sky Digital Co., Ltd.
-141.11.86.163:443#TW-44-AKILE LTD
-83.147.14.62:8443#TW-45-Akile LTD
-83.147.15.17:443#TW-46-Akile LTD
-141.11.86.150:8443#TW-47-AKILE LTD
-82.152.91.210:443#TW-48-Akile LTD
-85.237.207.78:443#TW-49-WAP.AC LLC
-130.162.137.247:443#KR-50-Oracle Corporation
+116.206.178.91:443#HK-2-Xnnet LLC
+122.10.119.252:443#HK-3-XinYuan Interconnect (Hong Kong) Ltd
+38.55.104.254:443#HK-4-Xnnet LLC
+38.55.104.32:2053#HK-5-Xnnet LLC
+43.161.233.40:8443#HK-6-Aceville Pte.ltd
+206.237.27.219:443#HK-7-Cogent Communications
+149.104.27.213:443#HK-8-Cogent Communications
+149.104.29.188:443#HK-9-Cogent Communications
+103.139.1.241:443#HK-10-West263 International Limited
+123.111.169.70:443#KR-11-SK Broadband Co Ltd
+13.251.248.21:443#SG-12-Amazon.com, Inc.
+118.109.40.183:443#JP-13-BIGLOBE Inc.
+168.107.36.254:443#KR-14-Oracle Corporation
+144.24.71.172:443#KR-15-Oracle Corporation
+13.158.71.221:443#JP-16-Amazon.com
+13.114.101.22:443#JP-17-Amazon Technologies Inc
+13.115.210.166:443#JP-18-Amazon Technologies Inc
+13.115.139.162:443#JP-19-Amazon Technologies Inc
+13.192.5.38:443#JP-20-Amazon.com
+103.201.130.126:443#JP-21-xTom Limited
+126.217.78.118:443#JP-22-SoftBank Corp.
+103.167.151.85:8443#SG-23-HostHatch
+108.61.181.4:8443#JP-24-Choopa
+108.160.135.122:443#JP-25-The Constant Company
+104.234.174.220:443#SG-26-Dromatics Systems Pte Ltd
+109.176.19.244:8443#SG-27-ByteVirt LLC
+109.176.19.176:443#SG-28-ByteVirt LLC
+152.67.198.36:443#KR-29-Oracle Corporation
+116.251.217.65:443#SG-30-OneAsiaHost
+140.115.53.51:443#TW-31-T-NCU.EDU.TW
+149.28.159.222:443#SG-32-The Constant Company
+149.28.150.141:443#SG-33-The Constant Company
+119.205.235.58:443#KR-34-Korea Telecom
+149.28.159.87:443#SG-35-The Constant Company
+130.94.29.155:443#KR-36-Light Node Limited
+149.28.150.210:443#SG-37-The Constant Company
+150.109.240.55:443#KR-38-Aceville Pte.ltd
+101.33.68.172:443#KR-39-Aceville Pte.ltd
+83.147.14.62:8443#TW-40-Akile LTD
+82.152.91.210:443#TW-41-Akile LTD
+83.147.15.17:443#TW-42-Akile LTD
+141.11.86.150:8443#TW-43-AKILE LTD
+131.186.26.94:443#KR-44-Oracle Corporation
+85.237.207.141:443#TW-45-WAP.AC LLC
+83.147.13.193:443#TW-46-Akile LTD
+140.235.39.19:443#TW-47-Sunoaki Network LLC
+85.237.207.78:443#TW-48-WAP.AC LLC
+132.145.91.135:443#KR-49-Oracle Corporation
+83.147.15.84:443#TW-50-Akile LTD
