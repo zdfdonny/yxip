@@ -7,20 +7,20 @@
   "query": "101.33.68.172",
   "status": "success"
  },
- "103.139.1.241": {
-  "as": "AS139021 West263 International Limited",
-  "city": "香港",
-  "country": "香港",
-  "isp": "West263 International Limited",
-  "query": "103.139.1.241",
-  "status": "success"
- },
  "103.143.81.178": {
   "as": "AS139659 LUCIDACLOUD LIMITED",
   "city": "大角咀",
   "country": "香港",
   "isp": "Lucidacloud Limited",
   "query": "103.143.81.178",
+  "status": "success"
+ },
+ "103.143.81.222": {
+  "as": "AS139659 LUCIDACLOUD LIMITED",
+  "city": "大角咀",
+  "country": "香港",
+  "isp": "Lucidacloud Limited",
+  "query": "103.143.81.222",
   "status": "success"
  },
  "103.167.151.85": {
@@ -53,6 +53,22 @@
   "country": "香港",
   "isp": "Xnnet LLC",
   "query": "103.238.227.212",
+  "status": "success"
+ },
+ "103.240.199.7": {
+  "as": "AS42960 VH Global Limited",
+  "city": "观塘",
+  "country": "香港",
+  "isp": "VH-GLOBAL",
+  "query": "103.240.199.7",
+  "status": "success"
+ },
+ "103.27.187.224": {
+  "as": "AS134835 Starry Network Limited",
+  "city": "东京",
+  "country": "日本",
+  "isp": "Starry Network Limited",
+  "query": "103.27.187.224",
   "status": "success"
  },
  "104.16.105.166": {
@@ -159,14 +175,6 @@
   "query": "104.26.8.117",
   "status": "success"
  },
- "104.27.21.118": {
-  "as": "AS13335 Cloudflare, Inc.",
-  "city": "多伦多",
-  "country": "加拿大",
-  "isp": "Cloudflare, Inc.",
-  "query": "104.27.21.118",
-  "status": "success"
- },
  "108.160.135.122": {
   "as": "AS20473 The Constant Company, LLC",
   "city": "Minamishinagawa",
@@ -191,36 +199,12 @@
   "query": "109.176.19.176",
   "status": "success"
  },
- "109.176.19.244": {
-  "as": "AS212336 ByteVirt LLC",
-  "city": "新加坡",
-  "country": "新加坡",
-  "isp": "ByteVirt LLC",
-  "query": "109.176.19.244",
-  "status": "success"
- },
- "116.206.178.91": {
-  "as": "AS6134 XNNET LLC",
-  "city": "旺角",
-  "country": "香港",
-  "isp": "Xnnet LLC",
-  "query": "116.206.178.91",
-  "status": "success"
- },
  "116.251.217.65": {
   "as": "AS59211 OneAsiaHost",
   "city": "新加坡",
   "country": "新加坡",
   "isp": "OneAsiaHost",
   "query": "116.251.217.65",
-  "status": "success"
- },
- "118.109.40.183": {
-  "as": "AS2518 BIGLOBE Inc.",
-  "city": "Shinagawa",
-  "country": "日本",
-  "isp": "BIGLOBE Inc.",
-  "query": "118.109.40.183",
   "status": "success"
  },
  "119.205.235.58": {
@@ -255,6 +239,14 @@
   "query": "126.217.78.118",
   "status": "success"
  },
+ "129.121.129.25": {
+  "as": "AS31898 Oracle Corporation",
+  "city": "新加坡",
+  "country": "新加坡",
+  "isp": "Oracle Corporation",
+  "query": "129.121.129.25",
+  "status": "success"
+ },
  "13.114.101.22": {
   "as": "AS16509 Amazon.com, Inc.",
   "city": "東京都",
@@ -271,20 +263,20 @@
   "query": "13.115.139.162",
   "status": "success"
  },
- "13.115.210.166": {
-  "as": "AS16509 Amazon.com, Inc.",
-  "city": "東京都",
-  "country": "日本",
-  "isp": "Amazon Technologies Inc",
-  "query": "13.115.210.166",
-  "status": "success"
- },
  "13.158.71.221": {
   "as": "AS16509 Amazon.com, Inc.",
   "city": "東京都",
   "country": "日本",
   "isp": "Amazon.com",
   "query": "13.158.71.221",
+  "status": "success"
+ },
+ "13.158.86.30": {
+  "as": "AS16509 Amazon.com, Inc.",
+  "city": "東京都",
+  "country": "日本",
+  "isp": "Amazon.com",
+  "query": "13.158.86.30",
   "status": "success"
  },
  "13.192.5.38": {
@@ -295,20 +287,36 @@
   "query": "13.192.5.38",
   "status": "success"
  },
- "13.251.248.21": {
+ "13.196.179.169": {
   "as": "AS16509 Amazon.com, Inc.",
-  "city": "新加坡",
-  "country": "新加坡",
+  "city": "東京都",
+  "country": "日本",
   "isp": "Amazon.com, Inc.",
-  "query": "13.251.248.21",
+  "query": "13.196.179.169",
   "status": "success"
  },
- "130.162.137.247": {
-  "as": "AS31898 Oracle Corporation",
-  "city": "首尔特别市",
-  "country": "韩国",
-  "isp": "Oracle Corporation",
-  "query": "130.162.137.247",
+ "13.230.247.88": {
+  "as": "AS16509 Amazon.com, Inc.",
+  "city": "東京都",
+  "country": "日本",
+  "isp": "Amazon.com, Inc.",
+  "query": "13.230.247.88",
+  "status": "success"
+ },
+ "13.231.172.130": {
+  "as": "AS16509 Amazon.com, Inc.",
+  "city": "東京都",
+  "country": "日本",
+  "isp": "Amazon.com, Inc.",
+  "query": "13.231.172.130",
+  "status": "success"
+ },
+ "13.231.221.179": {
+  "as": "AS16509 Amazon.com, Inc.",
+  "city": "東京都",
+  "country": "日本",
+  "isp": "Amazon.com, Inc.",
+  "query": "13.231.221.179",
   "status": "success"
  },
  "130.94.29.155": {
@@ -335,20 +343,12 @@
   "query": "132.145.91.135",
   "status": "success"
  },
- "14.137.235.130": {
-  "as": "AS2497 Internet Initiative Japan Inc.",
-  "city": "东京",
-  "country": "日本",
-  "isp": "Internet Initiative Japan Inc.",
-  "query": "14.137.235.130",
-  "status": "success"
- },
- "14.137.235.178": {
-  "as": "AS2497 Internet Initiative Japan Inc.",
-  "city": "东京",
-  "country": "日本",
-  "isp": "Internet Initiative Japan Inc.",
-  "query": "14.137.235.178",
+ "139.180.152.37": {
+  "as": "AS20473 The Constant Company, LLC",
+  "city": "新加坡",
+  "country": "新加坡",
+  "isp": "SGP VULTR",
+  "query": "139.180.152.37",
   "status": "success"
  },
  "140.115.53.51": {
@@ -359,6 +359,14 @@
   "query": "140.115.53.51",
   "status": "success"
  },
+ "140.235.39.162": {
+  "as": "AS212336 ByteVirt LLC",
+  "city": "台北市",
+  "country": "台湾",
+  "isp": "ByteVirt LLC",
+  "query": "140.235.39.162",
+  "status": "success"
+ },
  "140.235.39.19": {
   "as": "AS212336 ByteVirt LLC",
   "city": "台北市",
@@ -367,12 +375,12 @@
   "query": "140.235.39.19",
   "status": "success"
  },
- "141.11.86.150": {
-  "as": "AS61112 AKILE LTD",
-  "city": "臺北市",
-  "country": "中華民國",
-  "isp": "AKILE LTD",
-  "query": "141.11.86.150",
+ "140.245.70.145": {
+  "as": "AS31898 Oracle Corporation",
+  "city": "春川市",
+  "country": "韩国",
+  "isp": "Oracle Corporation",
+  "query": "140.245.70.145",
   "status": "success"
  },
  "144.24.71.172": {
@@ -381,6 +389,22 @@
   "country": "韩国",
   "isp": "Oracle Corporation",
   "query": "144.24.71.172",
+  "status": "success"
+ },
+ "149.104.26.114": {
+  "as": "AS139659 LUCIDACLOUD LIMITED",
+  "city": "新加坡",
+  "country": "新加坡",
+  "isp": "Cogent Communications",
+  "query": "149.104.26.114",
+  "status": "success"
+ },
+ "149.104.26.89": {
+  "as": "AS139659 LUCIDACLOUD LIMITED",
+  "city": "新加坡",
+  "country": "新加坡",
+  "isp": "Cogent Communications",
+  "query": "149.104.26.89",
   "status": "success"
  },
  "149.104.27.213": {
@@ -397,6 +421,14 @@
   "country": "新加坡",
   "isp": "Cogent Communications",
   "query": "149.104.29.188",
+  "status": "success"
+ },
+ "149.104.5.141": {
+  "as": "AS42960 VH Global Limited",
+  "city": "新加坡",
+  "country": "新加坡",
+  "isp": "Cogent Communications",
+  "query": "149.104.5.141",
   "status": "success"
  },
  "149.28.150.141": {
@@ -439,6 +471,22 @@
   "query": "150.109.240.55",
   "status": "success"
  },
+ "151.242.188.249": {
+  "as": "AS212336 ByteVirt LLC",
+  "city": "台北市",
+  "country": "台湾",
+  "isp": "ByteVirt LLC",
+  "query": "151.242.188.249",
+  "status": "success"
+ },
+ "152.175.67.17": {
+  "as": "AS49304 SAKURA LINK LIMITED",
+  "city": "新加坡",
+  "country": "新加坡",
+  "isp": "Sakura International Investment Limited",
+  "query": "152.175.67.17",
+  "status": "success"
+ },
  "152.67.198.36": {
   "as": "AS31898 Oracle Corporation",
   "city": "春川市",
@@ -447,20 +495,52 @@
   "query": "152.67.198.36",
   "status": "success"
  },
+ "152.69.224.226": {
+  "as": "AS31898 Oracle Corporation",
+  "city": "春川市",
+  "country": "韩国",
+  "isp": "Oracle Corporation",
+  "query": "152.69.224.226",
+  "status": "success"
+ },
+ "154.19.187.141": {
+  "as": "AS149042 Silicon Cloud Global (US)",
+  "city": "东京",
+  "country": "日本",
+  "isp": "SICLOUD INFORMATION TECHNOLOGY (HONGKONG) CO., LIMITED",
+  "query": "154.19.187.141",
+  "status": "success"
+ },
+ "154.19.187.190": {
+  "as": "AS149042 Silicon Cloud Global (US)",
+  "city": "东京",
+  "country": "日本",
+  "isp": "SICLOUD INFORMATION TECHNOLOGY (HONGKONG) CO., LIMITED",
+  "query": "154.19.187.190",
+  "status": "success"
+ },
+ "156.244.57.227": {
+  "as": "AS154177 LIGHT NODE LIMITED",
+  "city": "香港",
+  "country": "香港",
+  "isp": "Light Node Limited",
+  "query": "156.244.57.227",
+  "status": "success"
+ },
+ "158.247.210.172": {
+  "as": "AS20473 The Constant Company, LLC",
+  "city": "首尔特别市",
+  "country": "韩国",
+  "isp": "The Constant Company, LLC",
+  "query": "158.247.210.172",
+  "status": "success"
+ },
  "158.247.222.168": {
   "as": "AS20473 The Constant Company, LLC",
   "city": "首尔特别市",
   "country": "韩国",
   "isp": "The Constant Company, LLC",
   "query": "158.247.222.168",
-  "status": "success"
- },
- "158.247.240.138": {
-  "as": "AS20473 The Constant Company, LLC",
-  "city": "首尔特别市",
-  "country": "韩国",
-  "isp": "The Constant Company, LLC",
-  "query": "158.247.240.138",
   "status": "success"
  },
  "162.159.128.253": {
@@ -511,12 +591,12 @@
   "query": "162.159.61.183",
   "status": "success"
  },
- "168.107.36.254": {
+ "168.107.36.135": {
   "as": "AS31898 Oracle Corporation",
   "city": "春川市",
   "country": "韩国",
   "isp": "Oracle Corporation",
-  "query": "168.107.36.254",
+  "query": "168.107.36.135",
   "status": "success"
  },
  "172.64.229.7": {
@@ -559,12 +639,12 @@
   "query": "173.245.49.194",
   "status": "success"
  },
- "190.93.246.67": {
-  "as": "AS13335 Cloudflare, Inc.",
-  "city": "Pozos",
-  "country": "哥斯达黎加",
-  "isp": "Cloudflare, Inc.",
-  "query": "190.93.246.67",
+ "193.200.130.20": {
+  "as": "AS42960 VH Global Limited",
+  "city": "香港",
+  "country": "香港",
+  "isp": "VH-GLOBAL",
+  "query": "193.200.130.20",
   "status": "success"
  },
  "198.41.208.224": {
@@ -575,22 +655,6 @@
   "query": "198.41.208.224",
   "status": "success"
  },
- "206.237.27.219": {
-  "as": "AS55933 Cloudie Limited",
-  "city": "观塘",
-  "country": "香港",
-  "isp": "Cogent Communications",
-  "query": "206.237.27.219",
-  "status": "success"
- },
- "207.57.132.189": {
-  "as": "AS139659 LUCIDACLOUD LIMITED",
-  "city": "香港",
-  "country": "香港",
-  "isp": "NTT America",
-  "query": "207.57.132.189",
-  "status": "success"
- },
  "38.147.171.13": {
   "as": "AS139659 LUCIDACLOUD LIMITED",
   "city": "旺角",
@@ -599,20 +663,12 @@
   "query": "38.147.171.13",
   "status": "success"
  },
- "38.55.104.254": {
-  "as": "AS967 VMISS Inc.",
-  "city": "香港",
+ "38.207.178.173": {
+  "as": "AS139659 LUCIDACLOUD LIMITED",
+  "city": "旺角",
   "country": "香港",
-  "isp": "Xnnet LLC",
-  "query": "38.55.104.254",
-  "status": "success"
- },
- "38.55.104.32": {
-  "as": "AS967 VMISS Inc.",
-  "city": "香港",
-  "country": "香港",
-  "isp": "Xnnet LLC",
-  "query": "38.55.104.32",
+  "isp": "Lucidacloud Limited",
+  "query": "38.207.178.173",
   "status": "success"
  },
  "43.161.233.40": {
@@ -669,14 +725,6 @@
   "country": "台湾",
   "isp": "WAP.AC LLC",
   "query": "85.237.207.141",
-  "status": "success"
- },
- "85.237.207.78": {
-  "as": "AS401443 WAP.AC LLC",
-  "city": "台北市",
-  "country": "台湾",
-  "isp": "WAP.AC LLC",
-  "query": "85.237.207.78",
   "status": "success"
  }
 }
