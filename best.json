@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03 14:08:59 +0800",
+  "generated_at": "2026-11-06 13:48:34 +0800",
   "top_n": 50,
   "scoring": {
     "latency": 0.65,
@@ -16,26 +16,6 @@
   "entries": [
     {
       "rank": 1,
-      "endpoint": "103.240.199.7:443",
-      "ip": "103.240.199.7",
-      "port": 443,
-      "kind": "relay",
-      "region": "HK",
-      "label": "HK",
-      "country": "香港",
-      "city": "观塘",
-      "isp": "VH-GLOBAL",
-      "asn": "AS42960 VH Global Limited",
-      "rtt_ms": 39.91,
-      "success_rate": 1.0,
-      "score": 70.47,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:103.240.199.7:443"
-    },
-    {
-      "rank": 2,
       "endpoint": "149.104.5.141:443",
       "ip": "149.104.5.141",
       "port": 443,
@@ -46,16 +26,16 @@
       "city": "新加坡",
       "isp": "Cogent Communications",
       "asn": "AS42960 VH Global Limited",
-      "rtt_ms": 40.74,
+      "rtt_ms": 46.43,
       "success_rate": 1.0,
-      "score": 70.09,
+      "score": 67.57,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:149.104.5.141:443"
     },
     {
-      "rank": 3,
+      "rank": 2,
       "endpoint": "103.238.227.212:8443",
       "ip": "103.238.227.212",
       "port": 8443,
@@ -66,36 +46,96 @@
       "city": "旺角",
       "isp": "Xnnet LLC",
       "asn": "AS6134 XNNET LLC",
-      "rtt_ms": 40.95,
+      "rtt_ms": 53.13,
       "success_rate": 1.0,
-      "score": 69.99,
+      "score": 64.78,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:103.238.227.212:8443"
     },
     {
-      "rank": 4,
-      "endpoint": "122.10.119.252:443",
-      "ip": "122.10.119.252",
+      "rank": 3,
+      "endpoint": "68.64.182.205:443",
+      "ip": "68.64.182.205",
       "port": 443,
       "kind": "relay",
       "region": "HK",
       "label": "HK",
       "country": "香港",
-      "city": "旺角",
-      "isp": "XinYuan Interconnect (Hong Kong) Ltd",
-      "asn": "AS24544 Law's Cloud Infrastructure Limited",
-      "rtt_ms": 49.0,
+      "city": "香港",
+      "isp": "LucidaCloud Limited",
+      "asn": "AS139659 LUCIDACLOUD LIMITED",
+      "rtt_ms": 60.67,
       "success_rate": 1.0,
-      "score": 66.48,
+      "score": 61.86,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:122.10.119.252:443"
+      "stable_id": "relay:68.64.182.205:443"
+    },
+    {
+      "rank": 4,
+      "endpoint": "149.104.29.188:443",
+      "ip": "149.104.29.188",
+      "port": 443,
+      "kind": "relay",
+      "region": "HK",
+      "label": "HK",
+      "country": "新加坡",
+      "city": "新加坡",
+      "isp": "Cogent Communications",
+      "asn": "AS139659 LUCIDACLOUD LIMITED",
+      "rtt_ms": 60.71,
+      "success_rate": 1.0,
+      "score": 61.85,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:149.104.29.188:443"
     },
     {
       "rank": 5,
+      "endpoint": "103.143.81.178:443",
+      "ip": "103.143.81.178",
+      "port": 443,
+      "kind": "relay",
+      "region": "HK",
+      "label": "HK",
+      "country": "香港",
+      "city": "大角咀",
+      "isp": "Lucidacloud Limited",
+      "asn": "AS139659 LUCIDACLOUD LIMITED",
+      "rtt_ms": 61.45,
+      "success_rate": 1.0,
+      "score": 61.57,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:103.143.81.178:443"
+    },
+    {
+      "rank": 6,
+      "endpoint": "207.57.122.184:443",
+      "ip": "207.57.122.184",
+      "port": 443,
+      "kind": "relay",
+      "region": "HK",
+      "label": "HK",
+      "country": "香港",
+      "city": "香港",
+      "isp": "NTT America",
+      "asn": "AS139659 LUCIDACLOUD LIMITED",
+      "rtt_ms": 61.92,
+      "success_rate": 1.0,
+      "score": 61.4,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:207.57.122.184:443"
+    },
+    {
+      "rank": 7,
       "endpoint": "149.104.27.213:443",
       "ip": "149.104.27.213",
       "port": 443,
@@ -106,159 +146,39 @@
       "city": "新加坡",
       "isp": "Cogent Communications",
       "asn": "AS139659 LUCIDACLOUD LIMITED",
-      "rtt_ms": 55.37,
+      "rtt_ms": 65.63,
       "success_rate": 1.0,
-      "score": 63.89,
+      "score": 60.06,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:149.104.27.213:443"
     },
     {
-      "rank": 6,
-      "endpoint": "149.104.26.114:8443",
-      "ip": "149.104.26.114",
-      "port": 8443,
-      "kind": "relay",
-      "region": "HK",
-      "label": "HK",
-      "country": "新加坡",
-      "city": "新加坡",
-      "isp": "Cogent Communications",
-      "asn": "AS139659 LUCIDACLOUD LIMITED",
-      "rtt_ms": 56.82,
-      "success_rate": 1.0,
-      "score": 63.32,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:149.104.26.114:8443"
-    },
-    {
-      "rank": 7,
-      "endpoint": "149.104.26.89:443",
-      "ip": "149.104.26.89",
-      "port": 443,
-      "kind": "relay",
-      "region": "HK",
-      "label": "HK",
-      "country": "新加坡",
-      "city": "新加坡",
-      "isp": "Cogent Communications",
-      "asn": "AS139659 LUCIDACLOUD LIMITED",
-      "rtt_ms": 60.03,
-      "success_rate": 1.0,
-      "score": 62.1,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:149.104.26.89:443"
-    },
-    {
       "rank": 8,
-      "endpoint": "123.111.169.70:2053",
-      "ip": "123.111.169.70",
-      "port": 2053,
-      "kind": "relay",
-      "region": "KR",
-      "label": "KR",
-      "country": "韩国",
-      "city": "首尔特别市",
-      "isp": "SK Broadband Co Ltd",
-      "asn": "AS9318 SK Broadband Co Ltd",
-      "rtt_ms": 62.48,
-      "success_rate": 1.0,
-      "score": 61.19,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:123.111.169.70:2053"
-    },
-    {
-      "rank": 9,
-      "endpoint": "140.245.70.145:443",
-      "ip": "140.245.70.145",
-      "port": 443,
-      "kind": "relay",
-      "region": "KR",
-      "label": "KR",
-      "country": "韩国",
-      "city": "春川市",
-      "isp": "Oracle Corporation",
-      "asn": "AS31898 Oracle Corporation",
-      "rtt_ms": 64.53,
-      "success_rate": 1.0,
-      "score": 60.45,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:140.245.70.145:443"
-    },
-    {
-      "rank": 10,
-      "endpoint": "38.207.178.173:443",
-      "ip": "38.207.178.173",
-      "port": 443,
-      "kind": "relay",
-      "region": "HK",
-      "label": "HK",
-      "country": "香港",
-      "city": "旺角",
-      "isp": "Lucidacloud Limited",
-      "asn": "AS139659 LUCIDACLOUD LIMITED",
-      "rtt_ms": 65.24,
-      "success_rate": 1.0,
-      "score": 60.19,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:38.207.178.173:443"
-    },
-    {
-      "rank": 11,
-      "endpoint": "193.200.130.20:443",
-      "ip": "193.200.130.20",
+      "endpoint": "207.57.123.77:443",
+      "ip": "207.57.123.77",
       "port": 443,
       "kind": "relay",
       "region": "HK",
       "label": "HK",
       "country": "香港",
       "city": "香港",
-      "isp": "VH-GLOBAL",
-      "asn": "AS42960 VH Global Limited",
-      "rtt_ms": 47.32,
-      "success_rate": 0.67,
-      "score": 60.17,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:193.200.130.20:443"
-    },
-    {
-      "rank": 12,
-      "endpoint": "103.143.81.222:2053",
-      "ip": "103.143.81.222",
-      "port": 2053,
-      "kind": "relay",
-      "region": "HK",
-      "label": "HK",
-      "country": "香港",
-      "city": "大角咀",
-      "isp": "Lucidacloud Limited",
+      "isp": "NTT America",
       "asn": "AS139659 LUCIDACLOUD LIMITED",
-      "rtt_ms": 65.73,
-      "success_rate": 1.0,
-      "score": 60.02,
+      "rtt_ms": 55.88,
+      "success_rate": 0.67,
+      "score": 56.67,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:103.143.81.222:2053"
+      "stable_id": "relay:207.57.123.77:443"
     },
     {
-      "rank": 13,
-      "endpoint": "123.111.169.70:2083",
+      "rank": 9,
+      "endpoint": "123.111.169.70:2096",
       "ip": "123.111.169.70",
-      "port": 2083,
+      "port": 2096,
       "kind": "relay",
       "region": "KR",
       "label": "KR",
@@ -266,196 +186,96 @@
       "city": "首尔特别市",
       "isp": "SK Broadband Co Ltd",
       "asn": "AS9318 SK Broadband Co Ltd",
-      "rtt_ms": 65.8,
+      "rtt_ms": 77.89,
       "success_rate": 1.0,
-      "score": 59.99,
+      "score": 55.96,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:123.111.169.70:2083"
+      "stable_id": "relay:123.111.169.70:2096"
+    },
+    {
+      "rank": 10,
+      "endpoint": "43.161.233.40:8443",
+      "ip": "43.161.233.40",
+      "port": 8443,
+      "kind": "relay",
+      "region": "HK",
+      "label": "HK",
+      "country": "香港",
+      "city": "香港",
+      "isp": "Aceville Pte.ltd",
+      "asn": "AS132203 Tencent Building, Kejizhongyi Avenue",
+      "rtt_ms": 42.43,
+      "success_rate": 0.33,
+      "score": 55.29,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:43.161.233.40:8443"
+    },
+    {
+      "rank": 11,
+      "endpoint": "123.111.169.70:443",
+      "ip": "123.111.169.70",
+      "port": 443,
+      "kind": "relay",
+      "region": "KR",
+      "label": "KR",
+      "country": "韩国",
+      "city": "首尔特别市",
+      "isp": "SK Broadband Co Ltd",
+      "asn": "AS9318 SK Broadband Co Ltd",
+      "rtt_ms": 80.52,
+      "success_rate": 1.0,
+      "score": 55.15,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:123.111.169.70:443"
+    },
+    {
+      "rank": 12,
+      "endpoint": "131.143.214.224:443",
+      "ip": "131.143.214.224",
+      "port": 443,
+      "kind": "relay",
+      "region": "JP",
+      "label": "JP",
+      "country": "日本",
+      "city": "东京",
+      "isp": "DDPS Networks, LLC",
+      "asn": "AS18526 DDPS Networks, LLC",
+      "rtt_ms": 94.09,
+      "success_rate": 1.0,
+      "score": 51.26,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:131.143.214.224:443"
+    },
+    {
+      "rank": 13,
+      "endpoint": "151.245.90.160:443",
+      "ip": "151.245.90.160",
+      "port": 443,
+      "kind": "relay",
+      "region": "HK",
+      "label": "HK",
+      "country": "香港",
+      "city": "Tsuen Wan",
+      "isp": "Dromatics Systems Pte Ltd",
+      "asn": "AS134677 Dromatics Systems Pte Ltd",
+      "rtt_ms": 96.5,
+      "success_rate": 1.0,
+      "score": 50.63,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:151.245.90.160:443"
     },
     {
       "rank": 14,
-      "endpoint": "152.67.198.36:443",
-      "ip": "152.67.198.36",
-      "port": 443,
-      "kind": "relay",
-      "region": "KR",
-      "label": "KR",
-      "country": "韩国",
-      "city": "春川市",
-      "isp": "Oracle Corporation",
-      "asn": "AS31898 Oracle Corporation",
-      "rtt_ms": 67.33,
-      "success_rate": 1.0,
-      "score": 59.46,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:152.67.198.36:443"
-    },
-    {
-      "rank": 15,
-      "endpoint": "144.24.71.172:443",
-      "ip": "144.24.71.172",
-      "port": 443,
-      "kind": "relay",
-      "region": "KR",
-      "label": "KR",
-      "country": "韩国",
-      "city": "春川市",
-      "isp": "Oracle Corporation",
-      "asn": "AS31898 Oracle Corporation",
-      "rtt_ms": 69.26,
-      "success_rate": 1.0,
-      "score": 58.79,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:144.24.71.172:443"
-    },
-    {
-      "rank": 16,
-      "endpoint": "168.107.36.135:443",
-      "ip": "168.107.36.135",
-      "port": 443,
-      "kind": "relay",
-      "region": "KR",
-      "label": "KR",
-      "country": "韩国",
-      "city": "春川市",
-      "isp": "Oracle Corporation",
-      "asn": "AS31898 Oracle Corporation",
-      "rtt_ms": 70.22,
-      "success_rate": 1.0,
-      "score": 58.46,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:168.107.36.135:443"
-    },
-    {
-      "rank": 17,
-      "endpoint": "119.205.235.58:443",
-      "ip": "119.205.235.58",
-      "port": 443,
-      "kind": "relay",
-      "region": "KR",
-      "label": "KR",
-      "country": "韩国",
-      "city": "Chuncheon-si",
-      "isp": "Korea Telecom",
-      "asn": "AS4766 Korea Telecom",
-      "rtt_ms": 93.59,
-      "success_rate": 1.0,
-      "score": 51.4,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:119.205.235.58:443"
-    },
-    {
-      "rank": 18,
-      "endpoint": "13.231.221.179:443",
-      "ip": "13.231.221.179",
-      "port": 443,
-      "kind": "relay",
-      "region": "JP",
-      "label": "JP",
-      "country": "日本",
-      "city": "東京都",
-      "isp": "Amazon.com, Inc.",
-      "asn": "AS16509 Amazon.com, Inc.",
-      "rtt_ms": 109.83,
-      "success_rate": 1.0,
-      "score": 47.38,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:13.231.221.179:443"
-    },
-    {
-      "rank": 19,
-      "endpoint": "13.158.86.30:443",
-      "ip": "13.158.86.30",
-      "port": 443,
-      "kind": "relay",
-      "region": "JP",
-      "label": "JP",
-      "country": "日本",
-      "city": "東京都",
-      "isp": "Amazon.com",
-      "asn": "AS16509 Amazon.com, Inc.",
-      "rtt_ms": 110.78,
-      "success_rate": 1.0,
-      "score": 47.16,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:13.158.86.30:443"
-    },
-    {
-      "rank": 20,
-      "endpoint": "126.217.78.118:443",
-      "ip": "126.217.78.118",
-      "port": 443,
-      "kind": "relay",
-      "region": "JP",
-      "label": "JP",
-      "country": "日本",
-      "city": "Minato",
-      "isp": "SoftBank Corp.",
-      "asn": "AS17676 SoftBank Corp.",
-      "rtt_ms": 111.24,
-      "success_rate": 1.0,
-      "score": 47.06,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:126.217.78.118:443"
-    },
-    {
-      "rank": 21,
-      "endpoint": "13.196.179.169:443",
-      "ip": "13.196.179.169",
-      "port": 443,
-      "kind": "relay",
-      "region": "JP",
-      "label": "JP",
-      "country": "日本",
-      "city": "東京都",
-      "isp": "Amazon.com, Inc.",
-      "asn": "AS16509 Amazon.com, Inc.",
-      "rtt_ms": 111.32,
-      "success_rate": 1.0,
-      "score": 47.04,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:13.196.179.169:443"
-    },
-    {
-      "rank": 22,
-      "endpoint": "13.158.71.221:443",
-      "ip": "13.158.71.221",
-      "port": 443,
-      "kind": "relay",
-      "region": "JP",
-      "label": "JP",
-      "country": "日本",
-      "city": "東京都",
-      "isp": "Amazon.com",
-      "asn": "AS16509 Amazon.com, Inc.",
-      "rtt_ms": 111.55,
-      "success_rate": 1.0,
-      "score": 46.99,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:13.158.71.221:443"
-    },
-    {
-      "rank": 23,
       "endpoint": "13.230.247.88:443",
       "ip": "13.230.247.88",
       "port": 443,
@@ -466,18 +286,98 @@
       "city": "東京都",
       "isp": "Amazon.com, Inc.",
       "asn": "AS16509 Amazon.com, Inc.",
-      "rtt_ms": 113.0,
+      "rtt_ms": 105.18,
       "success_rate": 1.0,
-      "score": 46.66,
+      "score": 48.46,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:13.230.247.88:443"
     },
     {
-      "rank": 24,
-      "endpoint": "13.231.172.130:443",
-      "ip": "13.231.172.130",
+      "rank": 15,
+      "endpoint": "14.137.235.154:443",
+      "ip": "14.137.235.154",
+      "port": 443,
+      "kind": "relay",
+      "region": "JP",
+      "label": "JP",
+      "country": "日本",
+      "city": "东京",
+      "isp": "Internet Initiative Japan Inc.",
+      "asn": "AS2497 Internet Initiative Japan Inc.",
+      "rtt_ms": 105.74,
+      "success_rate": 1.0,
+      "score": 48.33,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:14.137.235.154:443"
+    },
+    {
+      "rank": 16,
+      "endpoint": "13.115.139.162:443",
+      "ip": "13.115.139.162",
+      "port": 443,
+      "kind": "relay",
+      "region": "JP",
+      "label": "JP",
+      "country": "日本",
+      "city": "東京都",
+      "isp": "Amazon Technologies Inc",
+      "asn": "AS16509 Amazon.com, Inc.",
+      "rtt_ms": 105.86,
+      "success_rate": 1.0,
+      "score": 48.3,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:13.115.139.162:443"
+    },
+    {
+      "rank": 17,
+      "endpoint": "13.158.86.30:443",
+      "ip": "13.158.86.30",
+      "port": 443,
+      "kind": "relay",
+      "region": "JP",
+      "label": "JP",
+      "country": "日本",
+      "city": "東京都",
+      "isp": "Amazon.com",
+      "asn": "AS16509 Amazon.com, Inc.",
+      "rtt_ms": 106.78,
+      "success_rate": 1.0,
+      "score": 48.08,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:13.158.86.30:443"
+    },
+    {
+      "rank": 18,
+      "endpoint": "13.114.101.22:443",
+      "ip": "13.114.101.22",
+      "port": 443,
+      "kind": "relay",
+      "region": "JP",
+      "label": "JP",
+      "country": "日本",
+      "city": "東京都",
+      "isp": "Amazon Technologies Inc",
+      "asn": "AS16509 Amazon.com, Inc.",
+      "rtt_ms": 107.14,
+      "success_rate": 1.0,
+      "score": 48.0,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:13.114.101.22:443"
+    },
+    {
+      "rank": 19,
+      "endpoint": "13.196.179.169:443",
+      "ip": "13.196.179.169",
       "port": 443,
       "kind": "relay",
       "region": "JP",
@@ -486,116 +386,76 @@
       "city": "東京都",
       "isp": "Amazon.com, Inc.",
       "asn": "AS16509 Amazon.com, Inc.",
-      "rtt_ms": 113.56,
+      "rtt_ms": 108.0,
       "success_rate": 1.0,
-      "score": 46.54,
+      "score": 47.8,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:13.231.172.130:443"
+      "stable_id": "relay:13.196.179.169:443"
     },
     {
-      "rank": 25,
-      "endpoint": "154.19.187.141:443",
-      "ip": "154.19.187.141",
+      "rank": 20,
+      "endpoint": "13.231.221.179:443",
+      "ip": "13.231.221.179",
+      "port": 443,
+      "kind": "relay",
+      "region": "JP",
+      "label": "JP",
+      "country": "日本",
+      "city": "東京都",
+      "isp": "Amazon.com, Inc.",
+      "asn": "AS16509 Amazon.com, Inc.",
+      "rtt_ms": 109.12,
+      "success_rate": 1.0,
+      "score": 47.54,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:13.231.221.179:443"
+    },
+    {
+      "rank": 21,
+      "endpoint": "140.235.37.72:443",
+      "ip": "140.235.37.72",
       "port": 443,
       "kind": "relay",
       "region": "JP",
       "label": "JP",
       "country": "日本",
       "city": "东京",
-      "isp": "SICLOUD INFORMATION TECHNOLOGY (HONGKONG) CO., LIMITED",
-      "asn": "AS149042 Silicon Cloud Global (US)",
-      "rtt_ms": 114.33,
+      "isp": "ByteVirt LLC",
+      "asn": "AS212336 ByteVirt LLC",
+      "rtt_ms": 111.85,
       "success_rate": 1.0,
-      "score": 46.37,
+      "score": 46.92,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:154.19.187.141:443"
+      "stable_id": "relay:140.235.37.72:443"
     },
     {
-      "rank": 26,
-      "endpoint": "103.27.187.224:443",
-      "ip": "103.27.187.224",
+      "rank": 22,
+      "endpoint": "108.160.142.24:443",
+      "ip": "108.160.142.24",
       "port": 443,
       "kind": "relay",
       "region": "JP",
       "label": "JP",
       "country": "日本",
-      "city": "东京",
-      "isp": "Starry Network Limited",
-      "asn": "AS134835 Starry Network Limited",
-      "rtt_ms": 116.18,
+      "city": "Minamishinagawa",
+      "isp": "The Constant Company",
+      "asn": "AS20473 The Constant Company, LLC",
+      "rtt_ms": 117.44,
       "success_rate": 1.0,
-      "score": 45.97,
+      "score": 45.7,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:103.27.187.224:443"
+      "stable_id": "relay:108.160.142.24:443"
     },
     {
-      "rank": 27,
-      "endpoint": "154.19.187.190:443",
-      "ip": "154.19.187.190",
-      "port": 443,
-      "kind": "relay",
-      "region": "JP",
-      "label": "JP",
-      "country": "日本",
-      "city": "东京",
-      "isp": "SICLOUD INFORMATION TECHNOLOGY (HONGKONG) CO., LIMITED",
-      "asn": "AS149042 Silicon Cloud Global (US)",
-      "rtt_ms": 116.31,
-      "success_rate": 1.0,
-      "score": 45.94,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:154.19.187.190:443"
-    },
-    {
-      "rank": 28,
-      "endpoint": "103.167.151.85:8443",
-      "ip": "103.167.151.85",
-      "port": 8443,
-      "kind": "relay",
-      "region": "SG",
-      "label": "SG",
-      "country": "新加坡",
-      "city": "新加坡",
-      "isp": "HostHatch",
-      "asn": "AS63473 HostHatch, LLC",
-      "rtt_ms": 120.35,
-      "success_rate": 1.0,
-      "score": 45.1,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:103.167.151.85:8443"
-    },
-    {
-      "rank": 29,
-      "endpoint": "104.234.174.220:443",
-      "ip": "104.234.174.220",
-      "port": 443,
-      "kind": "relay",
-      "region": "SG",
-      "label": "SG",
-      "country": "新加坡",
-      "city": "新加坡",
-      "isp": "Dromatics Systems Pte Ltd",
-      "asn": "AS134677 Dromatics Systems Pte Ltd",
-      "rtt_ms": 120.88,
-      "success_rate": 1.0,
-      "score": 44.99,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:104.234.174.220:443"
-    },
-    {
-      "rank": 30,
+      "rank": 23,
       "endpoint": "109.176.19.176:443",
       "ip": "109.176.19.176",
       "port": 443,
@@ -606,36 +466,76 @@
       "city": "新加坡",
       "isp": "ByteVirt LLC",
       "asn": "AS212336 ByteVirt LLC",
-      "rtt_ms": 123.32,
+      "rtt_ms": 121.03,
       "success_rate": 1.0,
-      "score": 44.5,
+      "score": 44.96,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:109.176.19.176:443"
     },
     {
-      "rank": 31,
-      "endpoint": "152.69.224.226:443",
-      "ip": "152.69.224.226",
+      "rank": 24,
+      "endpoint": "103.167.151.85:8443",
+      "ip": "103.167.151.85",
+      "port": 8443,
+      "kind": "relay",
+      "region": "SG",
+      "label": "SG",
+      "country": "新加坡",
+      "city": "新加坡",
+      "isp": "HostHatch",
+      "asn": "AS63473 HostHatch, LLC",
+      "rtt_ms": 125.24,
+      "success_rate": 1.0,
+      "score": 44.12,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:103.167.151.85:8443"
+    },
+    {
+      "rank": 25,
+      "endpoint": "103.195.191.240:443",
+      "ip": "103.195.191.240",
       "port": 443,
       "kind": "relay",
       "region": "SG",
       "label": "SG",
-      "country": "韩国",
-      "city": "春川市",
-      "isp": "Oracle Corporation",
-      "asn": "AS31898 Oracle Corporation",
-      "rtt_ms": 167.99,
+      "country": "新加坡",
+      "city": "新加坡",
+      "isp": "Dromatics Systems Pte Ltd",
+      "asn": "AS134677 Dromatics Systems Pte Ltd",
+      "rtt_ms": 132.56,
       "success_rate": 1.0,
-      "score": 37.31,
+      "score": 42.74,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:152.69.224.226:443"
+      "stable_id": "relay:103.195.191.240:443"
     },
     {
-      "rank": 32,
+      "rank": 26,
+      "endpoint": "104.234.174.220:443",
+      "ip": "104.234.174.220",
+      "port": 443,
+      "kind": "relay",
+      "region": "SG",
+      "label": "SG",
+      "country": "新加坡",
+      "city": "新加坡",
+      "isp": "Dromatics Systems Pte Ltd",
+      "asn": "AS134677 Dromatics Systems Pte Ltd",
+      "rtt_ms": 140.29,
+      "success_rate": 1.0,
+      "score": 41.38,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:104.234.174.220:443"
+    },
+    {
+      "rank": 27,
       "endpoint": "156.244.57.227:443",
       "ip": "156.244.57.227",
       "port": 443,
@@ -646,16 +546,16 @@
       "city": "香港",
       "isp": "Light Node Limited",
       "asn": "AS154177 LIGHT NODE LIMITED",
-      "rtt_ms": 176.76,
+      "rtt_ms": 167.91,
       "success_rate": 1.0,
-      "score": 36.24,
+      "score": 37.32,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:156.244.57.227:443"
     },
     {
-      "rank": 33,
+      "rank": 28,
       "endpoint": "130.94.29.155:443",
       "ip": "130.94.29.155",
       "port": 443,
@@ -666,16 +566,16 @@
       "city": "首尔特别市",
       "isp": "Light Node Limited",
       "asn": "AS154177 LIGHT NODE LIMITED",
-      "rtt_ms": 182.7,
+      "rtt_ms": 186.78,
       "success_rate": 1.0,
-      "score": 35.57,
+      "score": 35.13,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:130.94.29.155:443"
     },
     {
-      "rank": 34,
+      "rank": 29,
       "endpoint": "116.251.217.65:443",
       "ip": "116.251.217.65",
       "port": 443,
@@ -686,36 +586,16 @@
       "city": "新加坡",
       "isp": "OneAsiaHost",
       "asn": "AS59211 OneAsiaHost",
-      "rtt_ms": 187.49,
+      "rtt_ms": 186.87,
       "success_rate": 1.0,
-      "score": 35.06,
+      "score": 35.12,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:116.251.217.65:443"
     },
     {
-      "rank": 35,
-      "endpoint": "139.180.152.37:443",
-      "ip": "139.180.152.37",
-      "port": 443,
-      "kind": "relay",
-      "region": "SG",
-      "label": "SG",
-      "country": "新加坡",
-      "city": "新加坡",
-      "isp": "SGP VULTR",
-      "asn": "AS20473 The Constant Company, LLC",
-      "rtt_ms": 191.97,
-      "success_rate": 1.0,
-      "score": 34.6,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:139.180.152.37:443"
-    },
-    {
-      "rank": 36,
+      "rank": 30,
       "endpoint": "140.115.53.51:443",
       "ip": "140.115.53.51",
       "port": 443,
@@ -726,36 +606,36 @@
       "city": "平鎮區",
       "isp": "T-NCU.EDU.TW",
       "asn": "AS18420 National Central University",
-      "rtt_ms": 192.73,
+      "rtt_ms": 192.15,
       "success_rate": 1.0,
-      "score": 34.52,
+      "score": 34.58,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:140.115.53.51:443"
     },
     {
-      "rank": 37,
-      "endpoint": "149.28.159.87:443",
-      "ip": "149.28.159.87",
-      "port": 443,
+      "rank": 31,
+      "endpoint": "15.235.212.159:8443",
+      "ip": "15.235.212.159",
+      "port": 8443,
       "kind": "relay",
       "region": "SG",
       "label": "SG",
       "country": "新加坡",
       "city": "新加坡",
-      "isp": "The Constant Company",
-      "asn": "AS20473 The Constant Company, LLC",
-      "rtt_ms": 193.87,
+      "isp": "OVH SAS",
+      "asn": "AS16276 OVH SAS",
+      "rtt_ms": 194.64,
       "success_rate": 1.0,
-      "score": 34.41,
+      "score": 34.33,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:149.28.159.87:443"
+      "stable_id": "relay:15.235.212.159:8443"
     },
     {
-      "rank": 38,
+      "rank": 32,
       "endpoint": "152.175.67.17:443",
       "ip": "152.175.67.17",
       "port": 443,
@@ -766,13 +646,133 @@
       "city": "新加坡",
       "isp": "Sakura International Investment Limited",
       "asn": "AS49304 SAKURA LINK LIMITED",
-      "rtt_ms": 197.91,
+      "rtt_ms": 196.15,
       "success_rate": 1.0,
-      "score": 34.02,
+      "score": 34.18,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:152.175.67.17:443"
+    },
+    {
+      "rank": 33,
+      "endpoint": "15.235.211.100:8443",
+      "ip": "15.235.211.100",
+      "port": 8443,
+      "kind": "relay",
+      "region": "SG",
+      "label": "SG",
+      "country": "新加坡",
+      "city": "新加坡",
+      "isp": "OVH SAS",
+      "asn": "AS16276 OVH SAS",
+      "rtt_ms": 196.59,
+      "success_rate": 1.0,
+      "score": 34.14,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:15.235.211.100:8443"
+    },
+    {
+      "rank": 34,
+      "endpoint": "158.247.253.111:2087",
+      "ip": "158.247.253.111",
+      "port": 2087,
+      "kind": "relay",
+      "region": "KR",
+      "label": "KR",
+      "country": "韩国",
+      "city": "首尔特别市",
+      "isp": "The Constant Company, LLC",
+      "asn": "AS20473 The Constant Company, LLC",
+      "rtt_ms": 208.8,
+      "success_rate": 1.0,
+      "score": 33.04,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:158.247.253.111:2087"
+    },
+    {
+      "rank": 35,
+      "endpoint": "141.164.34.193:443",
+      "ip": "141.164.34.193",
+      "port": 443,
+      "kind": "relay",
+      "region": "KR",
+      "label": "KR",
+      "country": "韩国",
+      "city": "首尔特别市",
+      "isp": "KOR VULTR",
+      "asn": "AS20473 The Constant Company, LLC",
+      "rtt_ms": 211.22,
+      "success_rate": 1.0,
+      "score": 32.84,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:141.164.34.193:443"
+    },
+    {
+      "rank": 36,
+      "endpoint": "101.33.68.172:443",
+      "ip": "101.33.68.172",
+      "port": 443,
+      "kind": "relay",
+      "region": "KR",
+      "label": "KR",
+      "country": "韩国",
+      "city": "首尔特别市",
+      "isp": "Aceville Pte.ltd",
+      "asn": "AS132203 Tencent Building, Kejizhongyi Avenue",
+      "rtt_ms": 213.38,
+      "success_rate": 1.0,
+      "score": 32.66,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:101.33.68.172:443"
+    },
+    {
+      "rank": 37,
+      "endpoint": "141.164.44.60:2053",
+      "ip": "141.164.44.60",
+      "port": 2053,
+      "kind": "relay",
+      "region": "KR",
+      "label": "KR",
+      "country": "韩国",
+      "city": "首尔特别市",
+      "isp": "KOR VULTR",
+      "asn": "AS20473 The Constant Company, LLC",
+      "rtt_ms": 215.41,
+      "success_rate": 1.0,
+      "score": 32.5,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:141.164.44.60:2053"
+    },
+    {
+      "rank": 38,
+      "endpoint": "141.164.44.60:443",
+      "ip": "141.164.44.60",
+      "port": 443,
+      "kind": "relay",
+      "region": "KR",
+      "label": "KR",
+      "country": "韩国",
+      "city": "首尔特别市",
+      "isp": "KOR VULTR",
+      "asn": "AS20473 The Constant Company, LLC",
+      "rtt_ms": 216.38,
+      "success_rate": 1.0,
+      "score": 32.42,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:141.164.44.60:443"
     },
     {
       "rank": 39,
@@ -786,9 +786,9 @@
       "city": "新加坡",
       "isp": "Oracle Corporation",
       "asn": "AS31898 Oracle Corporation",
-      "rtt_ms": 198.2,
+      "rtt_ms": 217.93,
       "success_rate": 1.0,
-      "score": 33.99,
+      "score": 32.3,
       "sources": [
         "zip"
       ],
@@ -796,23 +796,23 @@
     },
     {
       "rank": 40,
-      "endpoint": "158.247.210.172:443",
-      "ip": "158.247.210.172",
-      "port": 443,
+      "endpoint": "141.164.34.161:8443",
+      "ip": "141.164.34.161",
+      "port": 8443,
       "kind": "relay",
       "region": "KR",
       "label": "KR",
       "country": "韩国",
       "city": "首尔特别市",
-      "isp": "The Constant Company, LLC",
+      "isp": "KOR VULTR",
       "asn": "AS20473 The Constant Company, LLC",
-      "rtt_ms": 208.36,
+      "rtt_ms": 222.53,
       "success_rate": 1.0,
-      "score": 33.08,
+      "score": 31.95,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:158.247.210.172:443"
+      "stable_id": "relay:141.164.34.161:8443"
     },
     {
       "rank": 41,
@@ -826,9 +826,9 @@
       "city": "首尔特别市",
       "isp": "Aceville Pte.ltd",
       "asn": "AS132203 Tencent Building, Kejizhongyi Avenue",
-      "rtt_ms": 209.09,
+      "rtt_ms": 233.87,
       "success_rate": 1.0,
-      "score": 33.02,
+      "score": 31.16,
       "sources": [
         "zip"
       ],
@@ -836,46 +836,6 @@
     },
     {
       "rank": 42,
-      "endpoint": "83.147.15.17:443",
-      "ip": "83.147.15.17",
-      "port": 443,
-      "kind": "relay",
-      "region": "TW",
-      "label": "TW",
-      "country": "台湾",
-      "city": "台北市",
-      "isp": "Akile LTD",
-      "asn": "AS61112 AkileCloud Network",
-      "rtt_ms": 310.18,
-      "success_rate": 1.0,
-      "score": 27.64,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:83.147.15.17:443"
-    },
-    {
-      "rank": 43,
-      "endpoint": "140.235.39.162:443",
-      "ip": "140.235.39.162",
-      "port": 443,
-      "kind": "relay",
-      "region": "TW",
-      "label": "TW",
-      "country": "台湾",
-      "city": "台北市",
-      "isp": "ByteVirt LLC",
-      "asn": "AS212336 ByteVirt LLC",
-      "rtt_ms": 312.26,
-      "success_rate": 1.0,
-      "score": 27.57,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:140.235.39.162:443"
-    },
-    {
-      "rank": 44,
       "endpoint": "83.147.14.62:8443",
       "ip": "83.147.14.62",
       "port": 8443,
@@ -886,13 +846,53 @@
       "city": "台北市",
       "isp": "Akile LTD",
       "asn": "AS61112 AkileCloud Network",
-      "rtt_ms": 313.19,
+      "rtt_ms": 311.99,
       "success_rate": 1.0,
-      "score": 27.55,
+      "score": 27.58,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:83.147.14.62:8443"
+    },
+    {
+      "rank": 43,
+      "endpoint": "141.11.86.150:8443",
+      "ip": "141.11.86.150",
+      "port": 8443,
+      "kind": "relay",
+      "region": "TW",
+      "label": "TW",
+      "country": "中華民國",
+      "city": "臺北市",
+      "isp": "AKILE LTD",
+      "asn": "AS61112 AKILE LTD",
+      "rtt_ms": 318.56,
+      "success_rate": 1.0,
+      "score": 27.39,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:141.11.86.150:8443"
+    },
+    {
+      "rank": 44,
+      "endpoint": "83.147.15.17:443",
+      "ip": "83.147.15.17",
+      "port": 443,
+      "kind": "relay",
+      "region": "TW",
+      "label": "TW",
+      "country": "台湾",
+      "city": "台北市",
+      "isp": "Akile LTD",
+      "asn": "AS61112 AkileCloud Network",
+      "rtt_ms": 329.38,
+      "success_rate": 1.0,
+      "score": 27.1,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:83.147.15.17:443"
     },
     {
       "rank": 45,
@@ -906,9 +906,9 @@
       "city": "台北市",
       "isp": "Akile LTD",
       "asn": "AS61112 AkileCloud Network",
-      "rtt_ms": 314.27,
+      "rtt_ms": 338.1,
       "success_rate": 1.0,
-      "score": 27.52,
+      "score": 26.89,
       "sources": [
         "zip"
       ],
@@ -916,46 +916,6 @@
     },
     {
       "rank": 46,
-      "endpoint": "151.242.188.249:443",
-      "ip": "151.242.188.249",
-      "port": 443,
-      "kind": "relay",
-      "region": "TW",
-      "label": "TW",
-      "country": "台湾",
-      "city": "台北市",
-      "isp": "ByteVirt LLC",
-      "asn": "AS212336 ByteVirt LLC",
-      "rtt_ms": 318.89,
-      "success_rate": 1.0,
-      "score": 27.38,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:151.242.188.249:443"
-    },
-    {
-      "rank": 47,
-      "endpoint": "85.237.207.141:443",
-      "ip": "85.237.207.141",
-      "port": 443,
-      "kind": "relay",
-      "region": "TW",
-      "label": "TW",
-      "country": "台湾",
-      "city": "台北市",
-      "isp": "WAP.AC LLC",
-      "asn": "AS401443 WAP.AC LLC",
-      "rtt_ms": 329.12,
-      "success_rate": 1.0,
-      "score": 27.11,
-      "sources": [
-        "zip"
-      ],
-      "stable_id": "relay:85.237.207.141:443"
-    },
-    {
-      "rank": 48,
       "endpoint": "83.147.13.193:443",
       "ip": "83.147.13.193",
       "port": 443,
@@ -966,13 +926,53 @@
       "city": "台北市",
       "isp": "Akile LTD",
       "asn": "AS61112 AkileCloud Network",
-      "rtt_ms": 334.48,
+      "rtt_ms": 340.82,
       "success_rate": 1.0,
-      "score": 26.97,
+      "score": 26.83,
       "sources": [
         "zip"
       ],
       "stable_id": "relay:83.147.13.193:443"
+    },
+    {
+      "rank": 47,
+      "endpoint": "151.242.188.249:443",
+      "ip": "151.242.188.249",
+      "port": 443,
+      "kind": "relay",
+      "region": "TW",
+      "label": "TW",
+      "country": "台湾",
+      "city": "台北市",
+      "isp": "ByteVirt LLC",
+      "asn": "AS212336 ByteVirt LLC",
+      "rtt_ms": 342.55,
+      "success_rate": 1.0,
+      "score": 26.79,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:151.242.188.249:443"
+    },
+    {
+      "rank": 48,
+      "endpoint": "83.147.15.84:443",
+      "ip": "83.147.15.84",
+      "port": 443,
+      "kind": "relay",
+      "region": "TW",
+      "label": "TW",
+      "country": "台湾",
+      "city": "台北市",
+      "isp": "Akile LTD",
+      "asn": "AS61112 AkileCloud Network",
+      "rtt_ms": 350.69,
+      "success_rate": 1.0,
+      "score": 26.61,
+      "sources": [
+        "zip"
+      ],
+      "stable_id": "relay:83.147.15.84:443"
     },
     {
       "rank": 49,
@@ -986,9 +986,9 @@
       "city": "台北市",
       "isp": "Sunoaki Network LLC",
       "asn": "AS212336 ByteVirt LLC",
-      "rtt_ms": 339.29,
+      "rtt_ms": 356.59,
       "success_rate": 1.0,
-      "score": 26.86,
+      "score": 26.5,
       "sources": [
         "zip"
       ],
@@ -996,23 +996,23 @@
     },
     {
       "rank": 50,
-      "endpoint": "83.147.15.84:8443",
-      "ip": "83.147.15.84",
-      "port": 8443,
+      "endpoint": "85.237.207.141:443",
+      "ip": "85.237.207.141",
+      "port": 443,
       "kind": "relay",
       "region": "TW",
       "label": "TW",
       "country": "台湾",
       "city": "台北市",
-      "isp": "Akile LTD",
-      "asn": "AS61112 AkileCloud Network",
-      "rtt_ms": 341.13,
+      "isp": "WAP.AC LLC",
+      "asn": "AS401443 WAP.AC LLC",
+      "rtt_ms": 356.76,
       "success_rate": 1.0,
-      "score": 26.82,
+      "score": 26.49,
       "sources": [
         "zip"
       ],
-      "stable_id": "relay:83.147.15.84:8443"
+      "stable_id": "relay:85.237.207.141:443"
     }
   ]
 }
